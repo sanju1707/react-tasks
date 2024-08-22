@@ -1,0 +1,19 @@
+.dna-wrapper {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: pink;
+    
+  }
+  
+
+  .dna-wrapper svg path:nth-child(1) {
+    fill: yellow !important; 
+  }
+  
+  .dna-wrapper svg path:nth-child(2) {
+    fill: green !important; 
+  }

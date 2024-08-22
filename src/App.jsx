@@ -8,20 +8,17 @@ import { Borders } from './components/borders/borders'
 import Header from './components/reactboot1/reactboot1'
 import Part from './components/reactboot1/cursoul'
 import ReactCard from './components/reactboot1/reactcard'
-
+import { CustomDna } from './components/npmpackages/loaders/loaders'
+import { CustomCircleBar } from './components/npmpackages/loaders/circleswithbar'
+import CustomBArToast from './components/npmpackages/toasters/bartost'
 
 function App() {
   return (
       <>
-      <Header></Header>
-      
-      <Part></Part>
-      <div className='divcard'>
-      <ReactCard></ReactCard>
-      <ReactCard></ReactCard>
-      <ReactCard></ReactCard>
-      <ReactCard></ReactCard>
-      </div>
+      <CustomDna></CustomDna>
+      <CustomCircleBar></CustomCircleBar>
+      <CustomBArToast></CustomBArToast>
+
       </>
   )
 }
