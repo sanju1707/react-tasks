@@ -11,13 +11,11 @@ import ReactCard from './components/reactboot1/reactcard'
 import { CustomDna } from './components/npmpackages/loaders/loaders'
 import { CustomCircleBar } from './components/npmpackages/loaders/circleswithbar'
 import CustomBArToast from './components/npmpackages/toasters/bartost'
-
+import YoutubeClass from './components/classcomponents/youtubeclass'
 function App() {
   return (
       <>
-      <CustomDna></CustomDna>
-      <CustomCircleBar></CustomCircleBar>
-      <CustomBArToast></CustomBArToast>
+   <YoutubeClass></YoutubeClass>
 
       </>
   )
