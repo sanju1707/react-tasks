@@ -13,6 +13,7 @@ import { CustomCircleBar } from './components/npmpackages/loaders/circleswithbar
 import CustomBArToast from './components/npmpackages/toasters/bartost'
 import YoutubeClass from './components/classcomponents/youtubeclass'
 import CustomButton from './components/button/button'
+import Season from './components/seasons/season'
 function App() {
   const ImageList=[
     {source:"https://th.bing.com/th/id/R.9bf0470cbea90c844c635f40d84f3721?rik=bP%2fUizTRhIaOxg&riu=http%3a%2f%2f2.bp.blogspot.com%2f-2YcnpB_0rjs%2fUFNEQkoF6SI%2fAAAAAAAAJoM%2ft9l0XjtvR9s%2fs0%2fnaruto-uzumaki-1920x1080-wallpaper.jpg&ehk=07gu0u7Y%2fkEbDk5qfjr%2fphBMAAsshHtPB3OF3pHGQr8%3d&risl=&pid=ImgRaw&r=0",
@@ -56,6 +57,9 @@ function App() {
         <OrderList list={["banana","grape"]}/>
         <OrderList list={["pineapple","apple"]}/>
 
+      </div>
+      <div>
+       <Season/>
       </div>
     </>
   )
