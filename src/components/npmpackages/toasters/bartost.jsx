@@ -2,6 +2,7 @@ import React from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 
 import 'react-toastify/dist/ReactToastify.css';
+import { errorToasts } from './bartost';
 
 function CustomBArToast() {
   const notify = () => {
@@ -20,6 +21,7 @@ function CustomBArToast() {
         </div>
       )
     });
+   
 
     toast.error("Error Notification !", {
       position: "top-left"
@@ -33,10 +35,14 @@ function CustomBArToast() {
       position: "bottom-center"
     });
   };
+  const notify2=()=>{
+    errorToasts("i am message","top-right")
+  }
 
   return (
     <div>
-      <button onClick={notify}>Notify !</button>
+      {/* <button onClick={notify}>Notify !</button> */}
+      <button onClick={notify2}>notify error</button>
       <ToastContainer autoClose={1000} />
     </div>
   );

@@ -10,13 +10,16 @@ import Part from './components/reactboot1/cursoul'
 import ReactCard from './components/reactboot1/reactcard'
 import { CustomDna } from './components/npmpackages/loaders/loaders'
 import { CustomCircleBar } from './components/npmpackages/loaders/circleswithbar'
-import CustomBArToast from './components/npmpackages/toasters/bartost'
+import CustomBArToast from './components/npmpackages/toasters/bartost.jsx'
 import YoutubeClass from './components/classcomponents/youtubeclass'
+import Counter from './components/classcomponents/counter'
 function App() {
   return (
       <>
    <YoutubeClass></YoutubeClass>
-
+   
+    <Counter></Counter>
+    <CustomBArToast></CustomBArToast>
       </>
   )
 }
