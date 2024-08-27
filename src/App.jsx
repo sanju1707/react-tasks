@@ -14,6 +14,7 @@ import CustomBArToast from './components/npmpackages/toasters/bartost.jsx'
 import YoutubeClass from './components/classcomponents/youtubeclass'
 import Counter from './components/classcomponents/counter'
 import TempDeg from './components/tempdeg/tempdeg.jsx'
+import ReceipeList from './components/componentdidmount/recepies.jsx'
 
 
 
@@ -22,11 +23,7 @@ import TempDeg from './components/tempdeg/tempdeg.jsx'
 function App() {
   return (
       <>
-   <YoutubeClass></YoutubeClass>
-   
-    <Counter></Counter>
-    <CustomBArToast></CustomBArToast>
-    <TempDeg></TempDeg>
+      <ReceipeList/>
       </>
   )
 }
