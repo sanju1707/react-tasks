@@ -1,6 +1,8 @@
 
 import { Component } from "react"
 import { CustomDna } from "../npmpackages/loaders/loaders"
+import { OrderList } from "../list/list"
+import { Image } from "../images/images"
 
 
 class ReceipeList extends Component{
@@ -43,6 +45,9 @@ class ReceipeList extends Component{
                            <div key={index}>
                             <h3>{eachdata.name}</h3>
                             
+                            <OrderList list={eachdata.ingredients}/>
+
+                            <Image source={eachdata.image} width={300} height={300}/>
                            </div>
                         )
                     })

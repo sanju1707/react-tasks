@@ -1,32 +1,37 @@
 //import { Listitems } from './components/list/list'
 
-export const Listitems =()=>{
+export const Listitems =(prop)=>{
+    const{list}=prop
     return (
         <>
-        <li>naruto</li>
-        <li>sasuke</li>
-        <li>sakura</li>
+        {
+            list.map((listing)=>{
+                return <li>{listing}</li>
+            })
+        }
         </>
     )
 }
 
 
-export const OrderList=()=>{
+export const OrderList=(prop)=>{
+    const{list}=prop
     return(
         <>
         <ol>
-            <Listitems></Listitems>
+            <Listitems list={list}></Listitems>
             
         </ol>
         </>
     )
 }
 
-export const UnorderList=()=>{
+export const UnorderList=(prop)=>{
+    const{list}=prop
     return(
         <>
         <ul>
-            <Listitems></Listitems>
+            <Listitems list={list}></Listitems>
         </ul>
         </>
     )
