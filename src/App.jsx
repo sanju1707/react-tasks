@@ -17,6 +17,7 @@ import TempDeg from './components/tempdeg/tempdeg.jsx'
 import ReceipeList from './components/componentdidmount/recepies.jsx'
 import FakeStore from './components/componentdidmount/fakestoreapi.jsx'
 import RecipeData from './components/componentdidmount/recipesmodal.jsx'
+import FakeStoreFilter from './components/componentdidmount/fakestorefilter.jsx'
 
 
 
@@ -25,7 +26,7 @@ import RecipeData from './components/componentdidmount/recipesmodal.jsx'
 function App() {
   return (
       <>
-    <RecipeData/>
+    <FakeStoreFilter/>
       </>
   )
 }
