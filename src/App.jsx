@@ -20,6 +20,9 @@ import RecipeData from './components/componentdidmount/recipesmodal.jsx'
 import FakeStoreFilter from './components/componentdidmount/fakestorefilter.jsx'
 import CounterState from './components/hooks/usestateclass.jsx'
 import CustomTodo from './components/hooks/todosclass.jsx'
+import TaskTodo from './components/hooks/todotask.jsx'
+import Weather from './components/weathertask/weather.jsx'
+import FakeStoreForm from './components/kktasks/fakestoreaddform.jsx'
 
 
 
@@ -28,12 +31,10 @@ import CustomTodo from './components/hooks/todosclass.jsx'
 function App() {
   return (
       <>
-    <CounterState/>
-    <hr/>
-
-    <CustomTodo/>
+      <FakeStoreForm/>
       </>
   )
 }
 
 export default App
+ 

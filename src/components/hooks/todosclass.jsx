@@ -25,6 +25,18 @@ const CustomTodo=()=>{
          })
          settodo(newtodo)
     }
+    const updatehandler=(tarid)=>{
+       const newtodo= todo.map(each=>{
+            if(each.id===tarid){
+               return {...each,item:`update the data ${each.id}`}
+            }
+            else{
+                return each
+            }
+        })
+        
+        settodo(newtodo)
+    }
 
     return(
         <>
@@ -37,6 +49,7 @@ const CustomTodo=()=>{
                         <li>{each.item}</li>
                         
                         <button onClick={()=>{deletehandler(each.id)}}>delete</button>
+                        <button onClick={()=>{updatehandler(each.id)}}>update</button>
                         </>
                     )
                 })
