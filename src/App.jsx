@@ -18,6 +18,8 @@ import ReceipeList from './components/componentdidmount/recepies.jsx'
 import FakeStore from './components/componentdidmount/fakestoreapi.jsx'
 import RecipeData from './components/componentdidmount/recipesmodal.jsx'
 import FakeStoreFilter from './components/componentdidmount/fakestorefilter.jsx'
+import CounterState from './components/hooks/usestateclass.jsx'
+import CustomTodo from './components/hooks/todosclass.jsx'
 
 
 
@@ -26,7 +28,10 @@ import FakeStoreFilter from './components/componentdidmount/fakestorefilter.jsx'
 function App() {
   return (
       <>
-    <FakeStoreFilter/>
+    <CounterState/>
+    <hr/>
+
+    <CustomTodo/>
       </>
   )
 }
