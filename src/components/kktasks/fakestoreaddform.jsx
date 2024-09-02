@@ -8,6 +8,8 @@ class FakeStoreForm extends Component {
   state = {
     products: [],
     isloading: true,
+    dummy:[],
+    dummyloading:false
   };
   componentDidMount() {
     this.fetchData();
@@ -19,7 +21,8 @@ class FakeStoreForm extends Component {
       this.setState(
         {
           products: data,
-          isloading:false
+          isloading:false,
+          dummyloading:true
         },
         () => {}
       );
@@ -27,6 +30,17 @@ class FakeStoreForm extends Component {
       console.error("err");
     }
   };
+  addhandler=()=>{
+        if(this.state.dummyloading===true){
+          const firstProduct = this.state.products[0]; 
+          this.setState({
+            
+            products:[...this.state.products,firstProduct]
+          },()=>{
+            alert("successfully added")
+          })
+        }
+  }
 
   render() {
     return (
@@ -66,7 +80,7 @@ class FakeStoreForm extends Component {
               
             }}
           >
-            <Button variant="primary">Add To Cart</Button>
+            <Button variant="primary" onClick={()=>{this.addhandler()}}>Add To Cart</Button>
             
             {this.state.isloading ? (
               <MyLoader />
