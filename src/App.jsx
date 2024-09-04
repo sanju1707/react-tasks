@@ -23,15 +23,22 @@ import CustomTodo from './components/hooks/todosclass.jsx'
 import TaskTodo from './components/hooks/todotask.jsx'
 import Weather from './components/weathertask/weather.jsx'
 import FakeStoreForm from './components/kktasks/fakestoreaddform.jsx'
+import CustomButton from './components/button/button.jsx'
 
 
 
 
 
 function App() {
+
+   const onclick=(childdata)=>{
+    console.log(childdata)
+   }
   return (
       <>
-      <FakeStoreForm/>
+     <CustomButton  onPress={onclick}/>
+
+     <hr/>
       </>
   )
 }
