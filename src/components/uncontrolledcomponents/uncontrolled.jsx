@@ -39,7 +39,7 @@ const Uncontrolled = () => {
   };
   const loginApi = async (username, password) => {
     try {
-      console.log({ username, password }); 
+      
       const response = await axios.post("https://dummyjson.com/auth/login", {
         username: username,
         password: password

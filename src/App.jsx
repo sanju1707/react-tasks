@@ -1,6 +1,7 @@
 
 import './App.css'
-import Uncontrolled from './components/uncontrolledcomponents/uncontrolled'
+import AddTable from './components/uncontrolledcomponents/taskaddsuccesstable'
+
 
 
 
@@ -14,7 +15,7 @@ function App() {
    
   return (
       <>
-       <Uncontrolled/>
+      <AddTable/>
       </>
   )
 }
