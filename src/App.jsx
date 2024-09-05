@@ -1,8 +1,9 @@
 
 import './App.css'
+import Uncontrolled from './components/uncontrolledcomponents/uncontrolled'
 
 
-import TableBulb from './components/saturday1tasks/tablebulb.jsx'
+
 
 
 
@@ -13,7 +14,7 @@ function App() {
    
   return (
       <>
-       <TableBulb/>
+       <Uncontrolled/>
       </>
   )
 }
