@@ -1,6 +1,7 @@
 
 import './App.css'
-import AddTable from './components/uncontrolledcomponents/taskaddsuccesstable'
+import ControlForm from './components/controlledcomponnets/controlform'
+
 
 
 
@@ -15,7 +16,7 @@ function App() {
    
   return (
       <>
-      <AddTable/>
+      <ControlForm/>
       </>
   )
 }
