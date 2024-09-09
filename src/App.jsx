@@ -1,6 +1,7 @@
 
 import './App.css'
-import ControlForm from './components/controlledcomponnets/controlform'
+import Task3 from './components/kktasks/task3'
+
 
 
 
@@ -16,7 +17,7 @@ function App() {
    
   return (
       <>
-      <ControlForm/>
+      <Task3/>
       </>
   )
 }
