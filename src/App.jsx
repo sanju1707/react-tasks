@@ -31,15 +31,10 @@ import CustomButton from './components/button/button.jsx'
 
 function App() {
 
-   const onclick=(childdata)=>{
-    console.log(childdata)
-   }
+   
   return (
       <>
-     <CustomButton  onPress={onclick}/>
-
-     <hr/>
-     <TaskTodo/>
+     <Weather/>
       </>
   )
 }
