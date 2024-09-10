@@ -4,14 +4,40 @@ import { useState } from "react";
 const ControlForm=()=>{
 
   const [model,setmodel]=useState("")
+  const[modelErr,setmodelErr]=useState("")
 
   const modelHandler=(event)=>{
     const enteredValue=event.target.value
     console.log(enteredValue)
+    setmodel(enteredValue)
+    const error=modelValid(enteredValue)
+    if(error){
+      setmodelErr(error)
+    }
+    else{
+      setmodelErr("")
+    }
 
   }
-  const onsubmit=()=>{
-    
+  const modelValid=(value)=>{
+    let error=""
+    const modelRegar=/^samsung/ig
+    if(!value){
+      error="please enter ur model"
+    }
+    else if(!modelRegar.test(value)){
+      error="please enter samsung valid model"
+    }
+    return error
+  }
+  const onsubmit=(event)=>{
+    event.preventDefault()
+    if(modelErr){
+      alert("please fill prop")
+    }
+    else{
+      alert("successfully submitted")
+    }
   }
 
     
@@ -29,6 +55,7 @@ const ControlForm=()=>{
                 onChange={modelHandler}
                 
               />
+              {modelErr && <span style={{color:'red'}}>{modelErr}</span>}
               
             </div>
            
