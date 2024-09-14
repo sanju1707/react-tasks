@@ -1,6 +1,8 @@
 
 import './App.css'
-import DropDown from './components/controlledcomponnets/dropdown'
+
+import UseEffect2 from './components/hooks-useeffect/useeffect2'
+
 
 
 
@@ -17,7 +19,7 @@ function App() {
    
   return (
       <>
-      <DropDown/>
+     <UseEffect2/>
       </>
   )
 }
