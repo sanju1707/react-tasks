@@ -1,7 +1,7 @@
 
 import './App.css'
-
-import UseEffect2 from './components/hooks-useeffect/useeffect2'
+import Tabswitch from './components/hooks-useeffect/tabswitch'
+import UseEffectTable from './components/hooks-useeffect/useeffecttabletask'
 
 
 
@@ -19,7 +19,9 @@ function App() {
    
   return (
       <>
-     <UseEffect2/>
+     <Tabswitch/>
+     <hr/>
+     <UseEffectTable/>
       </>
   )
 }
