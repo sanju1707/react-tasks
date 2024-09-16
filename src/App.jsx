@@ -1,27 +1,21 @@
 
+
+import { BrowserRouter } from 'react-router-dom'
 import './App.css'
-import Tabswitch from './components/hooks-useeffect/tabswitch'
-import UseEffectTable from './components/hooks-useeffect/useeffecttabletask'
-
-
-
-
-
-
-
-
-
-
-
+import NavbarNavigate from './components/navbar/navbarnavigate'
+import NavigateStack from './navigation/navigation-stack'
 
 function App() {
 
    
   return (
       <>
-     <Tabswitch/>
-     <hr/>
-     <UseEffectTable/>
+      
+      <BrowserRouter>
+      <NavbarNavigate/>
+     <NavigateStack/>
+      </BrowserRouter>
+    
       </>
   )
 }
