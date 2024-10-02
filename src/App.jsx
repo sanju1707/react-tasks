@@ -12,8 +12,7 @@ function App() {
       <>
       
       <BrowserRouter>
-      <NavbarNavigate/>
-     <NavigateStack/>
+      <NavigateStack/>
       </BrowserRouter>
     
       </>
