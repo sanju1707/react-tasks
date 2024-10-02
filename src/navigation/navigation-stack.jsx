@@ -6,11 +6,24 @@ import InvalidScreen from '../screens/invalidscreen'
 import Categery from './nestednavcat'
 import Electronics from '../screens/electrnics'
 import Jewellery from '../screens/jewellery'
+import { createContext, useState } from 'react'
+
+ export const UserDetails=createContext()
 
 const NavigateStack=()=>{
+    const[username,setUsername]=useState("sanju")
+    const[isDark,setIsDark]=useState(true)
+    const DarkHandler=()=>{
+        setIsDark(!isDark)
+    }
     return(
      
-     <Routes>
+   <UserDetails.Provider value={{
+    username:username,
+    isDark:isDark,
+    DarkHandler
+   }}>
+      <Routes>
       <Route path="/" element={<HomeScreen/>}/>
       <Route path="/about" element={<AboutScreen/>}/>
       <Route path='/*' element={<InvalidScreen/>}/>
@@ -20,6 +33,7 @@ const NavigateStack=()=>{
       </Route>
     
      </Routes>
+   </UserDetails.Provider>
      
     )
 }
