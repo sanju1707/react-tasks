@@ -1,6 +1,7 @@
 import { useContext } from "react"
 import { Outlet ,Link} from "react-router-dom"
 import { UserDetails } from "./navigation-stack"
+import UseReducerExample from "../components/hooks/usereducer/usereducer"
 
 
 const Categery=()=>{
@@ -19,6 +20,7 @@ const Categery=()=>{
         
 
         <Outlet/>
+        <UseReducerExample/>
         </>
     )
 }
