@@ -7,6 +7,7 @@ import NavigateStack from './navigation/navigation-stack'
 import TestCase from './components/testcases/testcase'
 import TestMock from './components/reactmock/usememo'
 import Search from './components/reactmock/searchFunctiuon'
+import FromValidation from './fresherbot/formvalidation'
 
 function App() {
 
@@ -14,7 +15,7 @@ function App() {
   return (
       <>
       
-   <Search/>
+   <FromValidation/>
     
       </>
   )
