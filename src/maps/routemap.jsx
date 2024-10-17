@@ -22,7 +22,7 @@ const RouteMap = () => {
   
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
-    // googleMapsApiKey: 'AIzaSyBzRRsFH6kUE_PP5QaBIGytJIowSkPiAUQ',
+    googleMapsApiKey: 'AIzaSyBzRRsFH6kUE_PP5QaBIGytJIowSkPiAUQ',
     libraries
   });
 
