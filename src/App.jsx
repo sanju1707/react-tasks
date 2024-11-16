@@ -13,13 +13,15 @@ import RouteMap from './maps/routemap'
 import Program2 from './techouts/program1'
 import Program1 from './techouts/program1'
 import TechoutFrom from './techouts/program2'
+import Task from './components/interview/task'
 
 function App() {
   
    
   return (
       <>
-    <RouteMap/>
+    {/* <RouteMap/> */}
+    <Task/>
     
       </>
   )
